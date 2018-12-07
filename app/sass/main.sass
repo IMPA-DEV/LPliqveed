@@ -94,6 +94,14 @@ body
 b, strong
 	font-weight: bold
 
+.bg-first
+  background-image: url("../img/bg-header.png")
+  background-position: center right
+  background-repeat: no-repeat
+  height: 770px
+  position: absolute
+  width: 100%
+  z-index: -1
 .header
 	&-top
 		display: flex
@@ -243,6 +251,7 @@ b, strong
 	background-image: url("../img/bg-subscribe.JPG")
 	background-repeat: no-repeat
 	background-size: cover
+	margin-top: 65px
 .subscribe
 	padding: 110px 0
 	&-title p
@@ -273,14 +282,60 @@ input.submit
 	font-weight: 600
 	text-decoration: none
 	transition: 0.3s
-	padding: 15px 51px
+	padding: 13px 48px
 	background-color: $btn
-	border: none
+	border: 2px solid $btn
 	border-radius: 50px
 	cursor: pointer
 	&.active,
 	&:hover
 		transition: 0.3s
-		opacity: 0.8
+		background-color: transparent
+
+#footer
+  background-color: #909090
+.footer-top
+  display: flex
+  align-items: center
+  padding: 50px 0
+  margin-bottom: 47px
+  justify-content: space-between
+.footer-nav nav ul
+	display: flex
+	list-style: none
+	li a
+		font-size: 16px
+		color: #fff
+		text-decoration: none
+		margin: 0 10px
+		transition: 0.3s
+		&:hover
+			color: $btn
+			transition: 0.3s
+.footer-socials
+	display: flex
+	align-items: center
+	div
+		margin-left: 30px
+		&:first-child
+			margin-left: 0
+		img
+			position: relative
+			top: 0
+			transition: 0.3s
+			&:hover
+				position: relative
+				top: -3px
+				transition: 0.3s
+				box-shadow: 0px 1px 5px #ffffff7d
+				border-radius: 5px
+.footer-copy
+	padding: 16px 0
+	p
+		font-size: 12px
+		font-weight: 300
+		color: #fff
+		text-align: center
+
 
 @import "media" // Always at the end
