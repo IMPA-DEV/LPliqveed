@@ -3,6 +3,7 @@
 
 ::placeholder
 	color: $text
+	font-size: 18px
 
 ::selection
 	background-color: blueviolet
@@ -85,10 +86,11 @@ body
 	color: $text
 	background-color: #ffffff
 	input, textarea
-		border: #666 1px solid
 		outline: none
+		&:focus
+			border-color: $btn
 		&:focus:required:invalid
-			border-color: red
+			border-color: $btn
 		&:required:valid
 			border-color: green
 
@@ -279,16 +281,15 @@ b, strong
 			display: flex
 			align-items: center
 			justify-content: center
-		input
-			border: 2px solid #d9d9d9
-			border-radius: 5px
-			font-size: 16px
-			color: $text
-			padding: 13px 18px
 		input[type="email"]
 			width: 280px
 			margin-right: 15px
-
+input,textarea
+	border: 2px solid #d9d9d9
+	border-radius: 5px
+	font-size: 16px
+	color: $text
+	padding: 13px 18px
 input.submit
 	color: #ffffff
 	font-weight: 600
@@ -303,6 +304,41 @@ input.submit
 	&:hover
 		transition: 0.3s
 		background-color: transparent
+
+.contacts
+	&-form
+		max-width: 420px
+		width: 100%
+		margin: 0 auto
+		p
+			font-size: 24px
+			line-height: 1
+			margin-bottom: 40px
+		input
+			font-size: 18px
+			color: #000001
+			margin-bottom: 20px
+			width: 100%
+			max-width: 100%
+			box-sizing: border-box
+			&.submit
+				width: auto
+				background-color: transparent
+				color: $btn
+				transition: 0.3s
+				padding: 12px 65px
+				margin-top: 25px
+				&:hover
+					color: #fff
+					background-color: $btn
+					transition: 0.3s
+		textarea
+			height: 130px
+			width: 100%
+			max-width: 100%
+			box-sizing: border-box
+	&-wrap
+		display: flex
 
 #footer
   background-color: #909090
