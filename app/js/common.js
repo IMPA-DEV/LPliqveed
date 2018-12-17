@@ -13,11 +13,13 @@ $(function() {
     });
 
     // Mob menu
-    $('.header-mob, .close-nav').click(function () {
-        $('.header-nav').toggleClass('mobile');
-        $('body').toggleClass('vh');
-        $('.close').show(0);
-    })
+    if($(window).width() < 800){
+        $('.header-mob, .close-nav, .header-nav a').click(function () {
+            $('.header-nav').toggleClass('mobile');
+            $('body').toggleClass('vh');
+            $('.close').show(0);
+        })
+    }
 
     // Page to scroll
     $(".header-nav a").mPageScroll2id();
