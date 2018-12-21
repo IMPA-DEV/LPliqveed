@@ -21,8 +21,27 @@ $(function() {
         })
     }
 
-    // Page to scroll
-    $(".header-nav a").mPageScroll2id();
+    // Page scroll to id
+    $(".header-nav a").mPageScroll2id({
+        offset: 90
+    });
+
+    //scroll top-link transparent
+    $(function() {
+        var header = $("#header-top");
+        $(window).scroll(function(scrlevt) {
+            scrlevt.preventDefault();
+            var scroll = $(window).scrollTop();
+
+            if (scroll > 2) {
+                header.addClass("header-scroll");
+            } else {
+                header.removeClass("header-scroll");
+            }
+
+            return false;
+        });
+    });
 
 });
 

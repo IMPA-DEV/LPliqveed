@@ -129,7 +129,7 @@
 {
     position: relative;
     display: inline-block;
-    width: 43px;
+    width: 100px;
     height: 43px;
     margin: 0 5px;
     padding: 0;
@@ -140,7 +140,7 @@
     font-size: 0;
     line-height: 0;
     display: block;
-    width: 43px;
+    width: 100%;
     height: 43px;
     padding: 5px;
     cursor: pointer;
@@ -148,6 +148,8 @@
     border: 0;
     outline: none;
     background: transparent;
+    margin: 0 auto;
+    text-align: center;
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus
@@ -173,6 +175,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
     width: 43px;
     height: 43px;
     content: '';
@@ -190,25 +193,59 @@
     box-shadow: #0ccccc;
     background-repeat: no-repeat;
     background-position: center center;
+    margin: 0 auto;
 }
-.slick-dots li:nth-child(1) button:before{
+.slick-dots li:nth-child(6) button:before{
     background-image: url("../../img/icons-pag/p-forest.png");
 }
 .slick-dots li:nth-child(2) button:before{
     background-image: url("../../img/icons-pag/p-moon.png");
 }
-.slick-dots li:nth-child(3) button:before{
+.slick-dots li:nth-child(4) button:before{
     background-image: url("../../img/icons-pag/p-mountain.png");
 }
-.slick-dots li:nth-child(4) button:before{
+.slick-dots li:nth-child(3) button:before{
     background-image: url("../../img/icons-pag/p-ocean.png");
 }
 .slick-dots li:nth-child(5) button:before{
     background-image: url("../../img/icons-pag/p-sky.png");
 }
-.slick-dots li:nth-child(6) button:before{
+.slick-dots li:nth-child(1) button:before{
     background-image: url("../../img/icons-pag/p-sun.png");
 }
+
+.slick-dots li button:after{
+    color: #999999;
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    text-align: center;
+
+}
+
+.slick-dots li:nth-child(6) button:after{
+    content: '50MG CBD';
+}
+.slick-dots li:nth-child(2) button:after{
+    content: 'INDICA';
+}
+.slick-dots li:nth-child(4) button:after{
+    content: '1:1 THC/CBD';
+}
+.slick-dots li:nth-child(3) button:after{
+    content: 'HYBRID';
+}
+.slick-dots li:nth-child(5) button:after{
+    content: '20MG CBD';
+}
+.slick-dots li:nth-child(1) button:after{
+   content: 'SATIVA';
+}
+
+
+
 .slick-dots li.slick-active button:before
 {
     box-shadow: 0 1px 2px rgba(12, 204, 204, 0.36);
