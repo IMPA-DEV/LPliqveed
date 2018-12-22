@@ -110,20 +110,20 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 80px;
+    margin-top: 120px;
 }
 
 .slick-dots
 {
     position: absolute;
     /*bottom: -25px;*/
+    top: -70px;
     display: block;
     width: 100%;
     padding: 0;
     margin: 0;
     list-style: none;
     text-align: center;
-    padding-top: 30px;
 }
 .slick-dots li
 {
@@ -244,7 +244,10 @@
    content: 'SATIVA';
 }
 
-
+.slick-dots li:hover button:after,
+.slick-dots li.slick-active button:after{
+    color: #0ccccc;
+}
 
 .slick-dots li.slick-active button:before
 {

@@ -22,8 +22,12 @@ $(function() {
     }
 
     // Page scroll to id
-    $(".header-nav a").mPageScroll2id({
-        offset: 90
+    $(".main-nav a").mPageScroll2id({
+        offset: 90,
+        duration: 900
+    });
+    $.mPageScroll2id("scrollTo","#top",{
+        offset:0
     });
 
     //scroll top-link transparent
@@ -33,7 +37,7 @@ $(function() {
             scrlevt.preventDefault();
             var scroll = $(window).scrollTop();
 
-            if (scroll > 2) {
+            if (scroll > 1) {
                 header.addClass("header-scroll");
             } else {
                 header.removeClass("header-scroll");
