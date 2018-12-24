@@ -226,22 +226,22 @@
 }
 
 .slick-dots li:nth-child(6) button:after{
-    content: '50MG CBD';
+    content: 'REVIVE';
 }
 .slick-dots li:nth-child(2) button:after{
-    content: 'INDICA';
+    content: 'RELAX';
 }
 .slick-dots li:nth-child(4) button:after{
-    content: '1:1 THC/CBD';
+    content: 'FOCUS';
 }
 .slick-dots li:nth-child(3) button:after{
-    content: 'HYBRID';
+    content: 'BALANCE';
 }
 .slick-dots li:nth-child(5) button:after{
-    content: '20MG CBD';
+    content: 'RELIEF';
 }
 .slick-dots li:nth-child(1) button:after{
-   content: 'SATIVA';
+   content: 'ENERGY';
 }
 
 .slick-dots li:hover button:after,

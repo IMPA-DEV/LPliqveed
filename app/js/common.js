@@ -22,7 +22,7 @@ $(function() {
     }
 
     // Page scroll to id
-    $(".main-nav a").mPageScroll2id({
+    $(".main-nav a, .btn").mPageScroll2id({
         offset: 90,
         duration: 900
     });
@@ -46,6 +46,37 @@ $(function() {
             return false;
         });
     });
+
+    /* close popup */
+    $('.close').click(function() {
+        $('#popup').hide();
+        $('#quote-popup').hide();
+    });
+
+    /* Form Ajax */
+    $("form").submit(function(e) { //Change
+        //$(this).find('input[type="submit"]').css('pointer-events', 'none');
+        e.preventDefault();
+        var th = $(this);
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //Change
+            data: th.serialize()
+        }).success(function() {
+            console.log('success');
+            //$(dataLayer.push({ 'event': 'event_liqveed' }));
+
+            $('#popup').show();
+            $('.popup').animate({
+                top: '27%',
+                opacity: 1
+            }, 800);
+            th.trigger("reset");
+            $('.popup-sms').slideUp(100).delay(800).fadeIn(400);
+        });
+        return false;
+    });
+
 
 });
 
