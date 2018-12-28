@@ -22,7 +22,7 @@ $(function() {
     }
 
     // Page scroll to id
-    $(".main-nav a, .btn").mPageScroll2id({
+    $(".main-nav a, .btn, .footer-nav a").mPageScroll2id({
         offset: 90,
         duration: 900
     });

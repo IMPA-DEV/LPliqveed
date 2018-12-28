@@ -1,7 +1,8 @@
 <?php
 
 if (!empty($_POST)) {
-	$to = "info@liqveed.com";
+//	$to = "info@liqveed.com";
+	$to = "maxon.pro2015@gmail.com";
 	$subject = "Liqveed Subscribe";
 
 
@@ -75,7 +76,6 @@ if (!empty($_POST)) {
 
 	$message .= '
 <div class="subinfo">
-  <p>Visitor IP adress: '.$_SERVER['REMOTE_ADDR'].'</p>
 </div>
 </body>
 </html>
@@ -86,7 +86,7 @@ if (!empty($_POST)) {
 	$headers = 'Content-type: text/html; charset="utf-8"';
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Date: ". date('D, d M Y h:i:s O') ."\r\n";
-	$headers .= "From: Liqveed <admin@nirkov.ru> \r\n";
+	$headers .= "From: Liqveed <admin@liqveed.com> \r\n";
 	if($email!='') {
 		mail($to, $subject, $message, $headers);
 	} else {
