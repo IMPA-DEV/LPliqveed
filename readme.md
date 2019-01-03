@@ -1,7 +1,7 @@
 <h1><strong>Liqveed</strong> <br>Landing Page Site</h1>
 
 <p>
-	<img src="https://drive.google.com/file/d/1t2iaQJtsPw6IhUO22vfVmz5avwnyhylM/view?usp=sharing" alt="Liqveed">
+	<a href="https://liqveed.com/" target="_blank">https://liqveed.com</a>
 </p>
 
 <p>Author: <a href="#" target="_blank">IMPA Max Nirkov</a></p>
