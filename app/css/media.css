@@ -149,6 +149,7 @@
     }
     .location-search-form {
         padding-top: 30px;
+        margin: 0 auto;
     }
     .location-search-wrap > div {
         width: 100%;
